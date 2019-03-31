@@ -12,7 +12,8 @@ The implementation is a pure default implementation from the Udacity DDPG for po
 * LR_CRITIC = 1e-3        # learning rate of the critic
 * WEIGHT_DECAY = 0        # L2 weight decay
 
-![Default Hyper parameter](https://github.com/karthikrajkumar/Continuous-control/blob/master/default%20hp.JPG)
+
+<img src="https://github.com/karthikrajkumar/Continuous-control/blob/master/default%20hp.JPG" data-canonical-src="https://github.com/karthikrajkumar/Continuous-control/blob/master/default%20hp.JPG" width="400" height="400" />
 
 ## Batch normalization
 With the reference to the paper [Batch Normalization](https://arxiv.org/pdf/1502.03167v3.pdf)
