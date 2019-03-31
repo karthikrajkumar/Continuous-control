@@ -28,3 +28,17 @@ Introducing the Batch normalization, With the reference to the paper [Batch Norm
 * BN_MODE = 2             # BN_MODE = 1 : Batch Normalization before activation & BN_MODE = 2 : Batch Normalization after activation
 
 <img src="https://github.com/karthikrajkumar/Continuous-control/blob/master/BN%20distribution.JPG" data-canonical-src="https://github.com/karthikrajkumar/Continuous-control/blob/master/BN%20distribution.JPG" width="400" height="300" />
+
+## Attempt 3:
+Changing the Learning rate
+
+* BUFFER_SIZE = int(1e5)  # replay buffer size
+* BATCH_SIZE = 128        # minibatch size
+* GAMMA = 0.99            # discount factor
+* TAU = 1e-3              # for soft update of target parameters
+* LR_ACTOR = 5e-4         # learning rate of the actor 
+* LR_CRITIC = 5e-4        # learning rate of the critic
+* WEIGHT_DECAY = 0        # L2 weight decay
+* BN_MODE = 2             # BN_MODE = 1 : Batch Normalization before activation & BN_MODE = 2 : Batch Normalization after activation
+
+<img src="https://github.com/karthikrajkumar/Continuous-control/blob/master/optimal.JPG" data-canonical-src="https://github.com/karthikrajkumar/Continuous-control/blob/master/optimal.JPG" width="400" height="300" />
