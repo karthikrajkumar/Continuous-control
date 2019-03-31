@@ -13,7 +13,7 @@ The implementation is a pure default implementation from the Udacity DDPG for po
 * WEIGHT_DECAY = 0        # L2 weight decay
 
 
-<img src="https://github.com/karthikrajkumar/Continuous-control/blob/master/default%20hp.JPG" data-canonical-src="https://github.com/karthikrajkumar/Continuous-control/blob/master/default%20hp.JPG" width="400" height="400" />
+<img src="https://github.com/karthikrajkumar/Continuous-control/blob/master/default%20hp.JPG" data-canonical-src="https://github.com/karthikrajkumar/Continuous-control/blob/master/default%20hp.JPG" width="400" height="300" />
 
 ## Batch normalization
 With the reference to the paper [Batch Normalization](https://arxiv.org/pdf/1502.03167v3.pdf)
