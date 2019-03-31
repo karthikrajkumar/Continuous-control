@@ -1,4 +1,5 @@
 # Technical details pertaining the DDPG algorithm.
+The idea is to test multiple hyper parameters for fewer episodes say 100 and the best instance will be used to play the complete game.
 
 ## Attempt 1:
 The implementation is a pure default implementation from the Udacity DDPG for pong. The Hyper parameters defined are 
