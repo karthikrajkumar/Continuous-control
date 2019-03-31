@@ -30,7 +30,7 @@ Introducing the Batch normalization, With the reference to the paper [Batch Norm
 <img src="https://github.com/karthikrajkumar/Continuous-control/blob/master/BN%20distribution.JPG" data-canonical-src="https://github.com/karthikrajkumar/Continuous-control/blob/master/BN%20distribution.JPG" width="400" height="300" />
 
 ## Attempt 3:
-Changing the Learning rate
+Changing the FC units from 400 & 300 to 128 respectively & Changing the Learning rate
 
 * BUFFER_SIZE = int(1e5)  # replay buffer size
 * BATCH_SIZE = 128        # minibatch size
