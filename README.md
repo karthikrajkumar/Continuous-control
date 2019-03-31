@@ -8,3 +8,11 @@ The observation space consists of 33 variables corresponding to position, rotati
 
 # Real world example
 Watch this [YouTube](https://www.youtube.com/watch?v=ZVIxt2rt1_4) video to see how some researchers were able to train a similar task on a real robot! The accompanying research paper can be found [here](https://arxiv.org/pdf/1803.07067.pdf).
+
+# Environment Details
+For this use case, we dont have to install Unity environment as it has already been built. please find the details specific to operating systems.
+
+*    [Linux](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Linux.zip)
+*    [Mac OS](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher.app.zip)
+*    [Win 32](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Windows_x86.zip)
+*    [Win 64](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Windows_x86_64.zip)
