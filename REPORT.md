@@ -48,3 +48,5 @@ With the final attempt (4), I ran the environment and
 
 <img src="https://github.com/karthikrajkumar/Continuous-control/blob/master/env%20solved.JPG" data-canonical-src="https://github.com/karthikrajkumar/Continuous-control/blob/master/env%20solved.JPG" width="400" height="300" />
 
+# Future Work
+Is to change multiple parameter and to find the optimal policy to solve this environment in less number of episodes
