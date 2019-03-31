@@ -25,5 +25,6 @@ Introducing the Batch normalization, With the reference to the paper [Batch Norm
 * LR_ACTOR = 1e-4         # learning rate of the actor 
 * LR_CRITIC = 1e-3        # learning rate of the critic
 * WEIGHT_DECAY = 0        # L2 weight decay
-* BN_MODE = 2             # BN_MODE = 1 : Binomial Distribution before activation & BN_MODE = 2 : Binomial Distribution after activation
+* BN_MODE = 2             # BN_MODE = 1 : Batch Normalization before activation & BN_MODE = 2 : Batch Normalization after activation
 
+<img src="https://github.com/karthikrajkumar/Continuous-control/blob/master/BN%20distribution.JPG" data-canonical-src="https://github.com/karthikrajkumar/Continuous-control/blob/master/BN%20distribution.JPG" width="400" height="300" />
