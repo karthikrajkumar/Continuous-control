@@ -16,3 +16,25 @@ For this use case, we dont have to install Unity environment as it has already b
 *    [Mac OS](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher.app.zip)
 *    [Win 32](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Windows_x86.zip)
 *    [Win 64](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Windows_x86_64.zip)
+
+## Installation details
+you would be requiring the following
+*    Python 3.6 or above [click here](https://www.python.org/downloads/)
+    
+*    Jupyter notebook/ lab
+
+    python3 -m pip install --upgrade pip
+    python3 -m pip install jupyter
+    
+    jupyter notebook
+    
+*    Pytorch [click for installation](https://pytorch.org/)
+*    Numpy & matplotlib
+     
+    pip install numpy
+    pip install matplotlib
+     
+
+## How to run this ?
+Open the Continuous Control python notebook (Continuous_Control.ipynb) and start running cell by cell or run all.
+*    Note: The Unity environment needs to be downloaded and in Continuous_Control.ipynb the path to load the environment needs to be changed accordingly.
