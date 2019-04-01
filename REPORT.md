@@ -55,6 +55,13 @@ This project implements an off-policy method called Deep Deterministic Policy Gr
 
 Deep Deterministic Policy Gradient (DDPG) is an algorithm which concurrently learns a Q-function and a policy. It uses off-policy data and the Bellman equation to learn the Q-function, and uses the Q-function to learn the policy.
 
+**Quick Facts**
+* DDPG is an off-policy algorithm.
+* DDPG can only be used for environments with continuous action spaces.
+* DDPG can be thought of as being deep Q-learning for continuous action spaces.
+* The Spinning Up implementation of DDPG does not support parallelization.
+
+
 
 
 # Future Work
