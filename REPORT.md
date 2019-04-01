@@ -46,7 +46,7 @@ Changing the FC units from 400 & 300 to 128 respectively & Changing the Learning
 ## Final Execution
 With the final attempt (4), I ran the environment and 
 
-<img src="https://github.com/karthikrajkumar/Continuous-control/blob/master/env%20solved.JPG" data-canonical-src="https://github.com/karthikrajkumar/Continuous-control/blob/master/env%20solved.JPG" width="400" height="300" />
+<img src="https://github.com/karthikrajkumar/Continuous-control/blob/master/env%20solved.JPG" data-canonical-src="https://github.com/karthikrajkumar/Continuous-control/blob/master/env%20solved.JPG" width="500" height="400" />
 
 ## About the Model DDPG (Deep Deterministic Policy Gradients)
 This project implements an off-policy method called Deep Deterministic Policy Gradient and described in the paper
@@ -106,7 +106,8 @@ Both Neural Networks use the Adam optimizer with a learning rate of 2e-4 and are
 # Future Work
 As discussed in the Udacity instructions, a further evolution to this project would be to train the 20-agents version.
 
-In which case, it might be better to use other algorithms like [PPO](https://arxiv.org/pdf/1707.06347.pdf), [A3C](https://arxiv.org/pdf/1602.01783.pdf), [D4PG](https://openreview.net/pdf?id=SyZipzbCb) that use multiple (non-interacting, parallel) copies of the same agent to distribute the task of gathering experience.
+* In which case, it might be better to use other algorithms like [PPO](https://arxiv.org/pdf/1707.06347.pdf), [A3C](https://arxiv.org/pdf/1602.01783.pdf), [D4PG](https://openreview.net/pdf?id=SyZipzbCb) that use multiple (non-interacting, parallel) copies of the same agent to distribute the task of gathering experience.
   > This work adopts the very successful distributional perspective on reinforcement learning and adapts it to the continuous control setting. We combine this within a distributed framework for off-policy learning in order to develop what we call the Distributed Distributional Deep Deterministic Policy Gradient algorithm, D4PG. We also combine this technique with a number of additional, simple improvements such as the use of N-step returns and prioritized experience replay. Experimentally we examine the contribution of each of these individual components, and show how they interact, as well as their combined contributions. Our results show that across a wide variety of simple control tasks, difficult manipulation tasks, and a set of hard obstacle-based locomotion tasks the D4PG algorithm achieves state of the art performance
 
-Another enhancement would be to replace the Ornstein-Uhlenbeck noise process with parameter noise as described in Open AI's [paper](https://arxiv.org/abs/1706.01905)
+* Another enhancement would be to replace the Ornstein-Uhlenbeck noise process with parameter noise as described in Open AI's [paper](https://arxiv.org/abs/1706.01905)
+  > Deep reinforcement learning (RL) methods generally engage in exploratory behavior through noise injection in the action space. An alternative is to add noise directly to the agent's parameters, which can lead to more consistent exploration and a richer set of behaviors. Methods such as evolutionary strategies use parameter perturbations, but discard all temporal structure in the process and require significantly more samples. Combining parameter noise with traditional RL methods allows to combine the best of both worlds. We demonstrate that both off- and on-policy methods benefit from this approach through experimental comparison of DQN, DDPG, and TRPO on high-dimensional discrete action environments as well as continuous control tasks. Our results show that RL with parameter noise learns more efficiently than traditional RL with action space noise and evolutionary strategies individually
