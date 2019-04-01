@@ -64,5 +64,19 @@ In general, training and evaluating your policy and/or value function with thous
 #### OU Noise
 DDPG trains a deterministic policy in an off-policy way. Because the policy is deterministic, if the agent were to explore on-policy, in the beginning it would probably not try a wide enough variety of actions to find useful learning signals. To make DDPG policies explore better, we add noise to their actions at training time. The authors of the original DDPG paper recommended time-correlated OU noise, but more recent results suggest that uncorrelated, mean-zero Gaussian noise works perfectly well. Since the latter is simpler, it is preferred. To facilitate getting higher-quality training data, you may reduce the scale of the noise over the course of training. 
 
+please find the pseudocode from [here](https://spinningup.openai.com/en/latest/algorithms/ddpg.html)
+
+### Code implementation
+The code was implemented as a reference from the [Udacity DDPG Bipedel] (https://github.com/udacity/deep-reinforcement-learning/tree/master/ddpg-bipedal) and has been modified for the Reacher environment
+
+The code consist of 
+* `model.py` - Implement the Actor and the Critic classes.
+  - The Actor and Critic classes each implements a Target and a Local Neural Networks used for the training.
+* `ddpg_agent.py` - Implement the DDPG agent and a Replay Buffer memory used by the DDPG agent.
+  - The Actor's Local and Target neural networks, and the Critic's Local and Target neural networks are instanciated by the Agent's constructor
+  - The `learn()` method updates the policy and value parameters using given batch of experience tuples.
+* `Continuous_Control.ipynb` - This Jupyter notebooks allows to instanciate and train the agent
+
+
 # Future Work
 Is to change multiple parameter and to find the optimal policy to solve this environment in less number of episodes
