@@ -56,7 +56,9 @@ This project implements an off-policy method called Deep Deterministic Policy Gr
 Deep Deterministic Policy Gradient (DDPG) is an algorithm which concurrently learns a Q-function and a policy. It uses off-policy data and the Bellman equation to learn the Q-function, and uses the Q-function to learn the policy.
 
 The Actor-Critic learning algorithm is used to represent the policy function independently of the value function. The **policy function** structure is known as the actor, and the **value function** structure is referred to as the critic. The actor produces an action given the current state of the environment, and the critic produces a TD (Temporal-Difference) error signal given the state and resultant reward. If the critic is estimating the action-value function Q(s,a), it will also need the output of the actor. The output of the critic drives learning in both the actor and the critic. In Deep Reinforcement Learning, neural networks can be used to represent the actor and critic structures.
+
 In simple terms
+
 An actor is used to tune the parameter 𝜽 for the policy function, i.e. decide the best action for a specific state.
 A critic is used for evaluating the policy function estimated by the actor according to the temporal difference (TD) error.
 
