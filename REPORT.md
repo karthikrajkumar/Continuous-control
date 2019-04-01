@@ -104,4 +104,9 @@ Input nodes (33)
 ```
 Both Neural Networks use the Adam optimizer with a learning rate of 2e-4 and are trained using a batch size of 128.
 # Future Work
-Is to change multiple parameter and to find the optimal policy to solve this environment in less number of episodes
+As discussed in the Udacity instructions, 
+1.   a further evolution to this project would be to train the 20-agents version.
+
+In which case, it might be better to use other algorithms like [PPO](https://arxiv.org/pdf/1707.06347.pdf), [A3C](https://arxiv.org/pdf/1602.01783.pdf), [D4PG](https://openreview.net/pdf?id=SyZipzbCb) that use multiple (non-interacting, parallel) copies of the same agent to distribute the task of gathering experience.
+
+2.  Another enhancement would be to replace the Ornstein-Uhlenbeck noise process with parameter noise as described in Open AI's [paper](https://arxiv.org/abs/1706.01905)
