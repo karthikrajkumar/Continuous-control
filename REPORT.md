@@ -104,9 +104,9 @@ Input nodes (33)
 ```
 Both Neural Networks use the Adam optimizer with a learning rate of 2e-4 and are trained using a batch size of 128.
 # Future Work
-As discussed in the Udacity instructions, 
-1.   a further evolution to this project would be to train the 20-agents version.
+As discussed in the Udacity instructions, a further evolution to this project would be to train the 20-agents version.
 
 In which case, it might be better to use other algorithms like [PPO](https://arxiv.org/pdf/1707.06347.pdf), [A3C](https://arxiv.org/pdf/1602.01783.pdf), [D4PG](https://openreview.net/pdf?id=SyZipzbCb) that use multiple (non-interacting, parallel) copies of the same agent to distribute the task of gathering experience.
+  > This work adopts the very successful distributional perspective on reinforcement learning and adapts it to the continuous control setting. We combine this within a distributed framework for off-policy learning in order to develop what we call the Distributed Distributional Deep Deterministic Policy Gradient algorithm, D4PG. We also combine this technique with a number of additional, simple improvements such as the use of N-step returns and prioritized experience replay. Experimentally we examine the contribution of each of these individual components, and show how they interact, as well as their combined contributions. Our results show that across a wide variety of simple control tasks, difficult manipulation tasks, and a set of hard obstacle-based locomotion tasks the D4PG algorithm achieves state of the art performance
 
-2.  Another enhancement would be to replace the Ornstein-Uhlenbeck noise process with parameter noise as described in Open AI's [paper](https://arxiv.org/abs/1706.01905)
+Another enhancement would be to replace the Ornstein-Uhlenbeck noise process with parameter noise as described in Open AI's [paper](https://arxiv.org/abs/1706.01905)
