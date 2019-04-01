@@ -77,6 +77,31 @@ The code consist of
   - The `learn()` method updates the policy and value parameters using given batch of experience tuples.
 * `Continuous_Control.ipynb` - This Jupyter notebooks allows to instanciate and train the agent
 
+# DDPG implementation Observations and reasons
+As shown in the results the initial values were not great for this environment.
+* Reducing the Sigma values used in the Ornstein-Uhlenbeck noise process was another important change for the agent to start learning.
+* I usually add Batch Normalization before the Activation layers in Neural Networks. In this project, it looks like adding the batch normalization layer after the activation layer works better.
+* The environment action size is simple, reducing the size of the network (less units) from 400 and 300 to 128 helped improve the performance. 
+* Changing the learning rates - Having similar and slightly higher learning rate for both the actor and the critic network and it helped solving the environment.
 
+**Actor Neural Network Architecture**
+```
+Input nodes (33)
+  -> Fully connected nodes (128 nodes, Relu activation)
+    -> Batch Normalization
+      -> Fully Connected Layer (128 nodes, Relu activation)
+        -> Ouput nodes (4 nodes, tanh activation)
+```
+
+**Critic Neural Network Architecture**
+```
+Input nodes (33) 
+  -> Fully Connected Layer (128 nodes, Relu activation)
+    -> Batch Normlization
+      -> Include Actions at the second fully connected layer
+        -> Fully Connected Layer (128+4 nodes, Relu activation)
+          -> Ouput node (1 node, no activation)
+```
+Both Neural Networks use the Adam optimizer with a learning rate of 2e-4 and are trained using a batch size of 128.
 # Future Work
 Is to change multiple parameter and to find the optimal policy to solve this environment in less number of episodes
